@@ -5,6 +5,9 @@ import os
 import torch
 import textwrap
 
+import os
+from dotenv import load_dotenv
+
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.llms import HuggingFacePipeline
@@ -14,6 +17,10 @@ from langchain_groq import ChatGroq
 
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain 
+
+load_dotenv()
+groq_api_key = os.getenv("GROQ_API_KEY")
+
 
 #from constants import CHROMA_SETTINGS
 """
@@ -43,7 +50,7 @@ def llm_pipeline():
 
 def llm_groq():
     return ChatGroq(
-     groq_api_key="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", 
+    groq_api_key=groq_api_key, 
     model_name="llama3-8b-8192",
     temperature=0.7,
     top_p=0.95,

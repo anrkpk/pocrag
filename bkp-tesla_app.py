@@ -8,12 +8,16 @@ from langchain_community.llms import HuggingFacePipeline
 
 from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+import os
+load_dotenv()
+groq_api_key = os.getenv("GROQ_API_KEY")
 
 # ========== GROQ LLM ==========
 @st.cache_resource
 def llm_groq():
     return ChatGroq(
-        groq_api_key="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",  # Replace with environment variable in production
+        groq_api_key=groq_api_key,  # Replace with environment variable in production
         model_name="llama3-8b-8192",
         temperature=0.7,
         top_p=0.95,
