@@ -1,0 +1,14 @@
+beautifulsoup4
+requests 
+langchain 
+openai 
+python-dotenv 
+langchain_community
+pypdf
+cryptography
+sentence-transformers
+langchain-huggingface
+chromadb
+langchain_groq
+langchain-community
+- e .
