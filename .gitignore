@@ -5,3 +5,4 @@ tesla_env/share/**
 data/*
 db/*
 docs/*
+.env
