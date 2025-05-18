@@ -1,14 +1,10 @@
-beautifulsoup4
-requests 
-langchain 
-openai 
-python-dotenv 
-langchain_community
-pypdf
-cryptography
-sentence-transformers
-langchain-huggingface
-chromadb
-langchain_groq
 langchain-community
-- e .
+langchain
+pypdf
+langchain-huggingface
+sentence-transformers
+langchain-openai
+streamlit
+cryptography>=3.1
+faiss-cpu
+rank_bm25

@@ -5,3 +5,5 @@ tesla_env/share/**
 data/*
 db/*
 docs/*
+*.pybkp
+.env
