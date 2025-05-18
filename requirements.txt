@@ -1,5 +1,6 @@
 langchain-community
 langchain
+langchain_groq
 pypdf
 langchain-huggingface
 sentence-transformers
