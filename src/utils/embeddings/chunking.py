@@ -1,5 +1,6 @@
 from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from bs4 import BeautifulSoup
 from datetime import datetime
 import os
 import tempfile

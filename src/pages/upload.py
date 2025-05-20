@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
+from bs4 import BeautifulSoup
 
 from utils.embeddings.chunking import load_and_split_sources
 from utils.embeddings.retriever import create_retriever, create_hybrid_retriever
